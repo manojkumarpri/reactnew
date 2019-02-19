@@ -1,0 +1,52 @@
+/* .container{
+    direction: rtl;
+}
+.navtop{
+    margin-top:50px;
+}
+.tab-content {
+    padding: 40px;
+    margin-top: -20px; 
+} */
+
+.glow {
+    background-color: #004A7F;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+  @-webkit-keyframes glowing {
+    0% { background-color: #3DF70B; -webkit-box-shadow: 0 0 3px #3DF70B; }
+    50% { background-color: rgb(101, 238, 128); -webkit-box-shadow: 0 0 40px rgb(101, 238, 128); }
+    100% { background-color: #3DF70B; -webkit-box-shadow: 0 0 3px #3DF70B; }
+  }
+  
+  @-moz-keyframes glowing {
+    0% { background-color: #3DF70B; -moz-box-shadow: 0 0 3px #3DF70B; }
+    50% { background-color: rgb(101, 238, 128); -moz-box-shadow: 0 0 40px rgb(101, 238, 128); }
+    100% { background-color: #3DF70B; -moz-box-shadow: 0 0 3px #3DF70B; }
+  }
+  
+  @-o-keyframes glowing {
+    0% { background-color: #3DF70B; box-shadow: 0 0 3px #3DF70B; }
+    50% { background-color: rgb(101, 238, 128); box-shadow: 0 0 40px rgb(101, 238, 128); }
+    100% { background-color: #3DF70B; box-shadow: 0 0 3px #3DF70B; }
+  }
+  
+  @keyframes glowing {
+    0% { background-color: #3DF70B; box-shadow: 0 0 3px #3DF70B; }
+    50% { background-color: rgb(101, 238, 128); box-shadow: 0 0 40px rgb(101, 238, 128); }
+    100% { background-color: #3DF70B; box-shadow: 0 0 3px #3DF70B; }
+  }
