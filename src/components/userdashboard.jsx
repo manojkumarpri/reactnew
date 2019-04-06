@@ -32,7 +32,7 @@ class UserDashBoard extends Component {
     }
     componentDidMount() {
         if (this.state.userdata != undefined) {
-            axios.get("http://192.168.1.130:3001/orders/" + this.state.userdata.uid).then(response => {
+            axios.get("http://52.26.246.107:3005/orders/" + this.state.userdata.uid).then(response => {
                 console.log(response.data)
                 this.setState({ listData: response.data });
                 //  console.log(this.state.listData);
@@ -57,7 +57,7 @@ class UserDashBoard extends Component {
     }
     changeaddr() {
         var address = this.state.delivery_address;
-        axios.put("http://192.168.1.130:3001/users/" + this.state.userdata.uid, address).then(response => {
+        axios.put("http://52.26.246.107:3005/users/" + this.state.userdata.uid, address).then(response => {
             console.log("sucessfully updated" + response);
         }).catch(error => console.log(error)
         )
