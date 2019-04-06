@@ -200,7 +200,7 @@ class payment extends Component {
             console.log("oii")
             console.log(this.state.listData1[i]);
      
-    await axios.put("http://192.168.1.130:3001/items/" + this.state.listData1[i].item_id, this.state.listData1[i]).then(response => {
+    await axios.put("http://52.26.246.107:3005/items/" + this.state.listData1[i].item_id, this.state.listData1[i]).then(response => {
             console.log(response);
             console.log(Object.keys(response));
             console.log(i,this.state.listData1.length);
@@ -228,7 +228,7 @@ class payment extends Component {
    async go(){
         for(var j=0;j<this.state.deliver.length;j++){
              console.log("haii",j);
-       await     axios.post("http://192.168.1.130:3001/orders", this.state.deliver[j]).then(response => {
+       await     axios.post("http://52.26.246.107:3005/orders", this.state.deliver[j]).then(response => {
                 console.log(response);
                 console.log(j,this.state.deliver.length)
                 
