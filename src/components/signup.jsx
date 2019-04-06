@@ -33,7 +33,7 @@ class Signup extends Component {
   signup() {
     console.log(this.state.userdata);   
     if (this.state.confirmpassword === this.state.userdata.password) {
-      axios.post('http://192.168.1.130:3001/users', this.state.userdata).then(
+      axios.post('http://52.26.246.107:3005/users', this.state.userdata).then(
         response => {
           const alert = this.props.alert.show('successfully sent' , {
             // timeout: 5000 , // custom timeout just for this one alert
