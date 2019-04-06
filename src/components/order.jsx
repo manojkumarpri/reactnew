@@ -130,7 +130,7 @@ class Order extends Component {
     }
     async align(){
         for(var i=0;i<this.state.available.length;i++){
-        await axios.get("http://192.168.1.130:3001/items/"+this.state.available[i].provider_id).then(response => {
+        await axios.get("http://52.26.246.107:3005/items/"+this.state.available[i].provider_id).then(response => {
            
         if(response.data.length!=0){
             this.state.getdata=response.data;
