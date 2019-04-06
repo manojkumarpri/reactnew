@@ -26,8 +26,8 @@ class Qr extends Component {
         window.scrollTo(0,0);
         console.log(queryString.parse(this.props.location.search));
         const values=queryString.parse(this.props.location.search);
-        console.log("http://192.168.1.130:3001/ordersid/"+values.in)
-         axios.get("http://103.207.1.123:3001/ordersid/"+values.in).then(response => {
+        console.log("http://52.26.246.107:3005/ordersid/"+values.in)
+         axios.get("http://52.26.246.107:3005/ordersid/"+values.in).then(response => {
         console.log(response.data)   
         this.setState({ listData: response.data });
            // console.log(this.state.listData);
