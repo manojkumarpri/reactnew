@@ -18,7 +18,7 @@ class Tracking extends Component {
     }
     componentDidMount(){
         if(this.state.userdata!=null){
-        axios.get("http://192.168.1.130:3001/orders/"+this.state.userdata.uid).then(response => {
+        axios.get("http://52.26.246.107:3005/orders/"+this.state.userdata.uid).then(response => {
             this.setState({ listData1: response.data });
             this.state.listData1=response.data;
             console.log(this.state.listData1)
@@ -32,7 +32,7 @@ class Tracking extends Component {
         arr.push(a);
         console.log(arr);
         arr[0].order_status="cancelled";
-        await axios.put("http://192.168.1.130:3001/orders/" +arr[0].order_id,arr[0]).then(response => {
+        await axios.put("http://52.26.246.107:3005/orders/" +arr[0].order_id,arr[0]).then(response => {
             console.log(response);
             console.log(Object.keys(response));
             
