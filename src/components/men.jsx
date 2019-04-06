@@ -181,7 +181,7 @@ class men extends Component {
       // var product=Object.assign(,this.state.combine2,this.state.combine1); 
       console.log(this.state.listData)
       this.state.listData.map(a =>
-        axios.put("http://13.58.92.162:3000/products/" + a.Id1, a).then(response => {
+        axios.put("http://52.26.246.107:3005/products/" + a.Id1, a).then(response => {
           console.log(response);
         }).catch(error => console.log(error)
         ))
