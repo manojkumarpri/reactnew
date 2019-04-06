@@ -17,7 +17,7 @@ class Login extends Component {
     componentDidMount() {
         window.scrollTo(0,0)
 
-        axios.get('http://192.168.1.130:3001/users').then(
+        axios.get('http://52.26.246.107:3005/users').then(
             response => {
                 console.log("successfully get", response);
                 //this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
