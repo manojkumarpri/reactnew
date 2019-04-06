@@ -16,7 +16,7 @@ email() {
 	
 	this.state.listData.email=this.state.mail;
 
-	axios.post("http://192.168.1.130:3001/mails", this.state.listData).then(response => {
+	axios.post("http://52.26.246.107:3005/mails", this.state.listData).then(response => {
 		console.log(response);
 		//console.log(j,this.state.deliver.length)
 		this.props.alert.show('thanks for showing u r intrest to shineLogics connecting with us')
