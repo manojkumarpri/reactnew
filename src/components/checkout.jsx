@@ -314,13 +314,13 @@ class CheckOut extends Component {
         this.state.resource.push(this.state.listData2);
          }
          for(var i=0;i<this.state.listData1.length;i++){
-        axios.put("http://13.58.92.162:3000/provider/" + this.state.listData[i].provider_id, this.state.listData1[i]).then(response => {
+        axios.put("http://52.26.246.107:3005/provider/" + this.state.listData[i].provider_id, this.state.listData1[i]).then(response => {
             console.log(response);
         }).catch(error => console.log(error)
         )
     }
         for(var i=0;i<this.state.resource.length;i++){
-        axios.post("http://13.58.92.162:3000/orders", this.state.resource[i]).then(response => {
+        axios.post("http://52.26.246.107:3005/orders", this.state.resource[i]).then(response => {
             console.log(response);
         }).catch(error => console.log(error)
         )
